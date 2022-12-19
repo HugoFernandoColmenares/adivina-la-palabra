@@ -1,0 +1,70 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: lightblue;
+    color: #6A9FC8;
+}
+
+.container {
+    position: relative;
+    text-align: center;
+    margin: auto;
+    width: 400px;
+    transform: translateY(-20%);
+}
+
+.container h1
+{
+    margin: 20px;
+    font-size: 3em;
+    transition: 0.5s;
+    animation: animate 5s linear infinite;
+    color: #6A9FC8;
+}
+
+@keyframes animate 
+{
+    0%, 50%, 100%
+    {
+        font-size: 2em;
+    }
+    25%, 75%
+    {
+        font-size: 3em;
+    }
+}
+
+.container button 
+{
+    color: #6A9FC8;
+}
+
+.container button:hover
+{
+    cursor: pointer;
+    background: #6A9FC8;
+    color: #fff;
+}
+
+input,
+button {
+    background-color: white;
+    color: #6A9FC8;
+    border: none;
+    padding: 0.5em;
+    font-size: 1em;
+}
+
+input:focus,
+button:focus {
+    outline: none;
+    box-shadow: 0 0 5px lightblue;
+}
